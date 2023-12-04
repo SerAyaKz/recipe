@@ -1,0 +1,32 @@
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  /* Distributes space between the label and checkbox */
+  align-items: center;
+  /* Aligns items vertically in the center */
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  /* Light separator for each checkbox */
+  transition: background-color 0.2s;
+  /* Smooth background transition on hover */
+}
+
+.checkbox:hover {
+  background-color: #f9f9f9;
+  /* Light grey background on hover */
+}
+
+.checkbox label {
+  cursor: pointer;
+  flex-grow: 1;
+  /* Allows the label to take up available horizontal space */
+  display: flex;
+  justify-content: space-between;
+  /* Aligns label text and checkbox */
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin-left: auto;
+  /* Pushes the checkbox to the far right */
+}

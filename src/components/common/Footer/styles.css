@@ -1,0 +1,23 @@
+/* Footer Styles */
+.footer {
+  background-color: #111;
+  /* Dark background for contrast */
+  color: #fff;
+  /* Light text color for readability */
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+  /* Modern, clean font */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+  letter-spacing: 1px;
+  /* Slight letter spacing for a polished look */
+}

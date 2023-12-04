@@ -1,0 +1,72 @@
+/* Add this CSS to your stylesheet or in a style tag in your component */
+
+/* Container styles */
+.autotags {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Selected tags styles */
+.selected-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #4CAF50;
+    /* Green color, adjust as needed */
+    color: #fff;
+    /* White text */
+    padding: 8px;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.selected-tag button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+/* Input styles */
+input {
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Suggestions list styles */
+.autotagsul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    /* Set a max height for the suggestions container */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    border: 4px solid #ccc;
+    /* Add border to emphasize scrollable container */
+    border-radius: 4px;
+    /* Add border radius for a more aesthetic look */
+}
+
+.autotagsul>li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    /* Lighter gray border between suggestions */
+}
+
+.autotagsli:last-child {
+    border-bottom: none;
+    /* Remove border from the last suggestion */
+}
+
+.autotagsli:hover {
+    background-color: #f0f0f0;
+    /* Light gray on hover */
+}

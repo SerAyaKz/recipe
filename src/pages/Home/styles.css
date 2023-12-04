@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.filter {
+  width: 30%;
+}
+
+.gap {
+  width: 4px;
+  background-color: #111;
+}
+
+.home_list-wrap {
+  width: 69%;
+  /* additional styling for the list container */
+}

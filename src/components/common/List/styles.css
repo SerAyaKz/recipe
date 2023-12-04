@@ -1,0 +1,10 @@
+/* Container Styling */
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  background-color: #f4f4f4;
+  /* Light grey background */
+  padding: 1rem;
+  /* Adds some space inside the container */
+}

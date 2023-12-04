@@ -1,0 +1,66 @@
+.recipe-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 11px 11px 22px #bebebe, -11px -11px 22px #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-title {
+    font-size: 1.4em;
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recipe-rating {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+}
+
+.recipe-info span,
+.dietary-preferences span {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.dietary-preferences span {
+    color: #28a745;
+    font-style: italic;
+}
+
+.ingredients span {
+    font-size: 0.85em;
+    color: #6c757d;
+}
+
+.recipe-details {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.difficulty-level {
+    margin-right: 15px;
+    color: #dc3545;
+}
+
+.recipe-view {
+    margin-left: auto;
+    color: #17a2b8;
+}

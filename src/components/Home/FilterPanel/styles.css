@@ -1,0 +1,90 @@
+.input-group {
+  position: relative;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  /* Choose a font-family as per your design */
+}
+
+.input-group .label {
+  padding: 10px;
+  background-color: #4CAF50;
+  /* A pleasant green, you can choose your own color */
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  user-select: none;
+  /* Prevents text selection */
+  transition: background-color 0.3s;
+  /* Smooth transition for hover effect */
+}
+
+.input-group .label:hover {
+  background-color: #45a049;
+  /* Slightly darker shade for hover effect */
+}
+
+.checkbox-container {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  /* Light grey border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  z-index: 3;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  border-radius: 4px;
+  /* Rounded corners */
+  box-sizing: border-box;
+  /* Includes padding and border in the element's total width and height */
+  margin-top: 5px;
+  /* Space between label and dropdown */
+}
+
+.checkbox-container .checkbox {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  /* Light separator for each checkbox */
+  transition: background-color 0.2s;
+  /* Smooth background transition on hover */
+}
+
+.checkbox-container .checkbox:hover {
+  background-color: #f9f9f9;
+  /* Light grey background on hover */
+}
+
+.checkbox-container .checkbox:last-child {
+  border-bottom: none;
+  /* No border for the last checkbox */
+}
+
+.checkbox-container label {
+  cursor: pointer;
+  display: block;
+  /* Makes the whole area clickable */
+}
+
+.checkbox-container .checkbox input[type="checkbox"] {
+  float: right;
+  /* Spacing between checkbox and label */
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+/* Optional: Add some styling for the main content area */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.filter {
+  flex: 1;
+  margin-right: 16px;
+}

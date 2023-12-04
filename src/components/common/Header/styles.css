@@ -1,0 +1,81 @@
+/* Header Styles */
+.header {
+  background-color: #111;
+  /* Deep, rich background color */
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* Sharp shadow for a floating effect */
+  font-family: 'Helvetica Neue', sans-serif;
+  /* Modern and clean font */
+  margin-bottom: 20px;
+}
+
+.main-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  /* Horizontal navigation layout */
+  justify-content: center;
+  /* Centered navigation items */
+  gap: 25px;
+  /* Even space between each item */
+}
+
+.main-nav-list li {
+  position: relative;
+  /* For positioning sub-menus */
+}
+
+.main-nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  /* Bold text for a strong presence */
+  transition: color 0.3s ease;
+  /* Smooth color transition for hover effect */
+}
+
+.main-nav-list a:hover {
+  color: #e0e0e0;
+  /* Slightly lighter color on hover for interaction feedback */
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+  display: none;
+  /* Hide dropdown by default */
+  position: absolute;
+  background-color: #111;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  /* Soft edges for the dropdown */
+  padding: 10px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Center align the dropdown */
+}
+
+/* Show dropdown when hovering over li, not just the link */
+.main-nav-list li:hover>.dropdown {
+  display: block;
+  /* Show dropdown on hover */
+}
+
+.dropdown li {
+  padding: 5px 10px;
+}
+
+.dropdown li:hover {
+  background-color: #474747;
+  /* Slightly lighter background on hover in dropdown */
+}
+
+/* Ensure that the dropdown does not disappear when hovering over it */
+.dropdown:hover {
+  display: block;
+}

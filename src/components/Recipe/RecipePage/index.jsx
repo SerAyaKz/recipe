@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const RecipePage = ({ list, type_receipts, nations, ingList }) => (
   <div className="recipe-card">
-    <Link to={`/receipt/${list.recept_id}`} className="recipe-title">
+    <Link to={`/recipe/${list.recipe_id}`} className="recipe-title">
       {list.recipe_name}
     </Link>
 
@@ -40,6 +40,7 @@ const RecipePage = ({ list, type_receipts, nations, ingList }) => (
       height="900"
       src={list.youtube_link.replace("watch?v=", "embed/")}
     ></iframe>
+
   </div>
 );
 

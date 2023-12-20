@@ -16,6 +16,9 @@ const Header = () => {
           <li>
             <NavLink to="/trend">Trend</NavLink>
           </li>
+           <li>
+            <a href="https://aspap.vercel.app/">Another Project</a>
+          </li>
           {/* <li>
             <NavLink to="/account">Account</NavLink>
             <ul className="dropdown">
